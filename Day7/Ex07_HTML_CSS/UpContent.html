@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Up content</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="xuly.js"></script>
+</head>
+<body>
+	<div class="container img-thumbnail center-block">
+		<div class="form-group table-responsive">
+			<caption><h2>NỘI DUNG BÀI VIẾT</h2></caption>
+			<hr>
+			<table class="col-md-8">
+				
+				<tbody>
+					<tr>
+						<td>Tiêu đề</td>
+						<td colspan="3"><input type="text" class="form-control"></td>
+					</tr>
+					<tr>
+						<td>Liên kết tĩnh</td>
+						<td colspan="3">https://mail.google.com/mail/u/0/#inbox/FMfcgxvzKkwmPVJkMClmgBGhlffRlfDs</td>
+					</tr>
+					<tr>
+						<td>Nội dung</td>
+						<td colspan="3"><textarea name="noidung" class="col-md-12" placeholder="Nội dung bài viết chứa ít nhất 2000 kí tự"></textarea></td>
+					</tr>
+					<tr>
+						<td>Lịch đăng</td>
+						<td><input type="radio" value="now" name="posttime">Đăng ngay</td>
+						<td><input type="radio" value="timer" name="posttime">Đặt lịch</td>
+						<td><input type="time"></td>
+					</tr>
+					<tr>
+						<td><button type="button" class="btn btn-info">Đăng bài</button></td>
+						<td><button type="button" class="btn btn-sm btn-danger">Reset</button></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="right col-md-4">
+				<h4>THÔNG TIN BỔ SUNG</h4>
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="4">Email liên hệ</td>
+						</tr>
+						<tr>
+							<td colspan="4"><input type="email" name="email" class="col-md-12"></td>
+						</tr>
+						<tr>
+							<td colspan="4">Số điện thoại</td>
+						</tr>
+						<tr>
+							<td colspan="4"><input type="number" name="mobile" class="col-md-12"></td>
+						</tr>
+						<tr>
+							<td colspan="4">Thẻ đánh dấu</td>
+						</tr>
+						<tr>
+							<td colspan="3"><input type="text" name="tag" id="tag"></td>
+							<td><button type="button" class="btn btn-sm btn-success" onclick="save_tag()">Thêm</button></td>
+						</tr>
+						<tr id="tags">
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

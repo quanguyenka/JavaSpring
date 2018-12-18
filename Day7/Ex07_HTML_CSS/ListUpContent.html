@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="xuly.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="center-block container img-thumbnail" id="Content">
+		<div class="form-group table-responsive">
+			<caption><h2>NỘI DUNG BÀI VIẾT</h2></caption>
+			<hr>
+			<table class="col-md-8">
+				<tbody>
+					<tr>
+						<td>Tiêu đề</td>
+						<td colspan="3"><input type="text" class="form-control" id="tieude" value=""></td>
+					</tr>
+					<tr>
+						<td>Liên kết tĩnh</td>
+						<td colspan="3" id="lienkettinh"></td>
+					</tr>
+					<tr>
+						<td>Nội dung</td>
+						<td colspan="3"><textarea name="noidung" id="content" class="col-md-12" placeholder="Nội dung bài viết chứa ít nhất 2000 kí tự"></textarea></td>
+					</tr>
+					<tr>
+						<td>Lịch đăng</td>
+						<td><input type="radio" id="rdDangngay" value="now" name="posttime">Đăng ngay</td>
+						<td><input type="radio" id="rdDatlich" value="timer" name="posttime">Đặt lịch</td>
+						<td><input type="time"></td>
+					</tr>
+					<tr>
+						<td><button type="button" id="btnDangbai" class="btn btn-info">Đăng bài</button></td>
+						<td><button type="button" id="btnReset" class="btn btn-sm btn-danger">Reset</button></td>
+						<td><input type="button" name="" onclick="quaylai()" value="Quay lại" class="status btn-info"></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="right col-md-4">
+					<h4>THÔNG TIN BỔ SUNG</h4>
+					<table>
+						<tbody>
+							<tr>
+								<td colspan="4">Email liên hệ</td>
+							</tr>
+							<tr>
+								<td colspan="4"><input type="email" name="email" class="col-md-12"></td>
+							</tr>
+							<tr>
+								<td colspan="4">Số điện thoại</td>
+							</tr>
+							<tr>
+								<td colspan="4"><input type="number" name="mobile" class="col-md-12"></td>
+							</tr>
+							<tr>
+								<td colspan="4">Thẻ đánh dấu</td>
+							</tr>
+							<tr>
+								<td colspan="3"><input type="text" name="tag" id="tag"></td>
+								<td><button type="button" class="btn btn-sm btn-success" onclick="save_tag()">Thêm</button></td>
+							</tr>
+							<tr id="tags">
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="container img-thumbnail center-block" id="List">
+			<div class="listContent">
+				<div class="form-group">
+					<caption><h2>Danh sách bài viết</h2></caption>
+					<hr>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Chọn</th>
+								<th>Tiêu đề bài viết</th>
+								<th>Danh mục</th>
+								<th>Lịch đang</th>
+								<th>Trạng thái</th>
+								<th>Thao tác</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="bai1">
+								<td><input type="checkbox" name="check" value="1"></td>
+								<td id="tenbai" name="bai1" value="bai1">Bài 1</td>
+								<td id="tendetai" name="bai1">Khoa học</td>
+								<td id="thoigian" name="bai1">12:21 AM</td>
+								<td id="trangthaicha">
+									<input type="button" name="" id="trangthaicon1" value="Duyệt" class="status btn-success">
+								</td>
+								<td>
+									<table>
+										<tr>
+											<td><input type="button" name="" onclick="duyet(1)" value="Duyệt" class="status btn-success"></td>
+											<td><input type="button" name="" onclick="chan(1)" value="Chặn" class="status btn-warning"></td>
+											<td></td>
+											<td><input type="button" name="" onclick="txoa(1)" value="Xóa" class="status btn-danger"></td>
+										</tr>
+									</table>															
+								</td>
+							</tr>
+							<tr id="bai2">
+								<td><input type="checkbox" name="check" value="2"></td>
+								<td id="tenbai" name="bai2" value="bai2">Bài 2</td>
+								<td id="tendetai" name="bai2">Công nghệ</td>
+								<td id="thoigian" name="bai2">12:21 AM</td>
+								<td id="trangthaicha">
+									<input type="button" name="" id="trangthaicon2" value="Chặn" class="status btn-warning">
+								</td>
+								<td>
+									<table>
+										<tr>
+											<td><input type="button" id="2" onclick="duyet(2)" value="Duyệt" class="status btn-success"></td>
+											<td><input type="button"  id="2" onclick="chan(2)" value="Chặn" class="status btn-warning"></td>
+											<td></td>
+											<td><input type="button"  id="2" onclick="txoa(2)" value="Xóa" class="status btn-danger"></td>
+										</tr>
+									</table>															
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="button" id="" onclick="xem()" value="Xem" class="status btn-success">
+									<input type="button"  id="" onclick="sua()" value="Sửa" class="status btn-primary">	
+									<input type="button"  id="" onclick="xoa()" value="Xóa" class="status btn-danger">
+								</td>
+							</tr>					
+						</tbody>
+					</table>
+					<div id="ndbai1" class="noidung">
+						1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div id="ndbai2" class="noidung">
+						2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

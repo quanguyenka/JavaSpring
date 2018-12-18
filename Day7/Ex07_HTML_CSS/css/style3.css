@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sofia" !important;
+	margin: auto;
+	background: url(../img/background3.jpg);
+	position: relative;
+}
+.navbar-brand>img {
+	display: block;
+	width: 150px;
+	position: relative;
+	bottom: 5px;
+	margin-bottom: 30px;
+}
+.navbar-inverse {
+    background-color: #fff !important;
+    border-color: #797979 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff !important;
+    background-color: #545454 !important;
+}
+.affix + .container-fluid {
+	padding-top: 1000px;
+}
+.affix {
+	top: 0;	width: 100%;
+	z-index: 9999 !important;
+}
+
+.container {
+	margin: 20px 0px;
+}
+.row {
+	margin: 20px 0px;
+}
+.h_3 {
+	margin: 10px 0px;
+}
+
+#cpright {
+	text-align: center;
+	line-height: 30px;
+	font-family: -webkit-body;
+	font-size: 13px;
+	color: #fff;
+}
+.foot_ico {
+	font-size: 30px;
+	padding: 10px;
+}
+.foot_text {
+	margin: 10px;
+}
+.foot {
+	height: 100px;
+	background: black;
+	opacity: 0.8;
+	margin-top: 40px;
+}
+.bgd_foot {
+	position: absolute;
+	opacity: 1;
+}
+.up_foot {
+    height: 350px;
+    position: relative !important;
+    z-index: 99;
+    background: #222;
+    top: 200px;
+}
+.down_foot {
+    height: 100px;
+    position: relative !important;
+    z-index: 999;
+    background: #000;
+    top: 99px;
+}
+.col-md {
+	width: 200px;
+	float: left;
+	margin: 20px;
+	border-radius: 5%;
+	border: 1px solid #fff;
+}
+.foot_new {
+	background: #fff;
+	opacity: 1;
+	position: relative;
+	top: 30px;
+}
+.foot_img {
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%
+}
+.container1 {
+	background: url(../img/giaycu2.jpg);
+	margin-top: 80px !important;
+}
+.container {
+	margin-top: 50px;
+}
+.img-thumbnail {
+	margin-top: 20px;
+}
+
+/*
+Booklet
+*/
+.booklet {
+	height: 400px;
+	margin-top: 20px !important;
+	width: 600px;
+	background: url(../img/giaycu.jpg) !important;
+}
+.booklet .b-wrap-right {
+    background: #fff !important;
+}
+.booklet .b-page {
+    top: 10px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+	.container1 {
+		display: none !important;
+	}
+	.container2 {
+		display: block;
+	}
+}
+@media screen and (min-width: 765px) and (max-width: 1200px) {
+	.container1 {
+		display: block;
+	}
+	.container2 {
+		display: none !important;
+	}
+}
+
+@font-face {
+	font-family: Riesling;
+	src: url(../font/riesling.ttf);
+}
+small {
+	font-family: Riiesling;
+}

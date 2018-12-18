@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sofia" !important;
+	margin: auto;
+	background: url(../img/background2.jpg);
+	position: relative;
+}
+.navbar-brand>img {
+	display: block;
+	width: 150px;
+	position: relative;
+	bottom: 5px;
+	margin-bottom: 30px;
+}
+.navbar-inverse {
+	background-color: #fff !important;
+	border-color: #797979 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #000000 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	color: #fff !important;
+	background-color: #545454 !important;
+}
+#img_1 {
+	position: relative;
+	top: 46px;
+}
+.text_thucvat {
+	
+}
+
+#cpright {
+	text-align: center;
+	line-height: 30px;
+	font-family: -webkit-body;
+	font-size: 13px;
+	color: #fff;
+}
+.foot_ico {
+	font-size: 30px;
+	padding: 10px;
+	position: relative;
+	top: 10px;	
+}
+.foot_text {
+	margin: 10px;
+}
+.foot {
+	height: 100px;
+	background: black;
+	margin-top: 40px;
+}
+.foot_img {
+	height: 110px;
+}
+.bgd_foot {
+	position: absolute;
+	opacity: 1;
+}
+.up_foot {
+	height: 350px;
+	position: relative !important;
+	z-index: 99;
+	background: #222;
+	opacity: 0.9;
+	top: 210px;
+}
+.down_foot {
+	height: 100px;
+	position: relative !important;
+	z-index: 999;
+	background: #000;
+	opacity: 0.9;
+	top: 110px;
+}
+.col-sm-3 {
+	margin: 0px 5px;
+}
+.foot_new {
+	background: #fff;
+	opacity: 1;
+	position: relative;
+	top: 30px;
+}
+.foot_img {
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%
+}
+
+
+.affix {
+	top: 40px;
+	z-index: 9999 !important;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	.menu2 {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 765px) {
+	.foot1 {
+		display: block !important;
+		background: #000;
+		opacity: 0.9 !important;
+		position: relative;
+		top: 30px;
+	}
+	.foot2 {
+		display: none;
+	}
+	.section2_tablet {
+		display: block !important;		
+	}
+	.section2_laptop {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 426px) and (max-width: 765px) {
+	.foot1 {
+		display: none;
+	}
+	.foot2 {
+		display: block !important;
+	}
+	.foot_img {
+		display: none !important;
+	}
+	.foot_new {
+		display: none !important;
+	}
+	.up_foot {
+		display: none !important;
+	}
+	.down_foot {
+		position: relative;
+		top: 323px;
+	}
+	.section2_tablet {
+		display: none !important;
+	}
+	.section2_laptop {
+		display: block !important;
+	}
+}

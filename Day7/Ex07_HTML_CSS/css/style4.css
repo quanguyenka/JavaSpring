@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sofia" !important;
+	margin: auto;
+	background: url(../img/background4.jpg);
+}
+.navbar-brand>img {
+	display: block;
+	width: 150px;
+	position: relative;
+	bottom: 10px;
+	margin-bottom: 30px;
+}
+
+.img1 {
+	width: 100%;
+	position: absolute;
+	z-index: 9;
+}
+
+.img2 {
+	width: 65%;
+	position: relative;
+	z-index: 9999;
+	left: 200px;
+}
+.img3 {
+	width: 30%;
+	bottom: 460px;
+	position: relative;
+	z-index: 999;
+	float: right;
+}
+.img4 {
+	width: 40%;
+	bottom: 400px;
+    right: 285px;
+	position: relative;
+	z-index: 999;
+	float: right;
+}
+.img5 {
+	width: 30%;
+	left: 600px;
+    bottom: 225px;
+	position: relative;
+	z-index: 999;
+	float: right;
+}
+.container1 {
+	position: relative;
+}
+
+#cpright {
+    text-align: center;
+    line-height: 30px;
+    font-family: -webkit-body;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 15px;
+}
+.foot_ico {
+	font-size: 30px;
+	padding: 10px;
+    position: relative;
+    top: 10px;	
+}
+.foot_text {
+	margin: 10px;
+}
+.foot1 {
+	height: 100px;
+	background: black;
+	margin-top: 40px;
+}
+.foot_img {
+	height: 110px;
+}
+.bgd_foot {
+	position: absolute;
+	opacity: 1;
+}
+.up_foot {
+    height: 350px;
+    position: relative !important;
+    z-index: 99;
+    background: #222;
+    opacity: 0.9;
+    top: 210px;
+}
+.down_foot {
+    height: 100px;
+    position: relative !important;
+    z-index: 999;
+    background: #000;
+    opacity: 0.9;
+    top: 110px;
+}
+.col-sm-3 {
+	margin: 0px 5px;
+}
+.foot_new {
+	background: #fff;
+	opacity: 1;
+	position: relative;
+	top: 30px;
+}
+.foot_img {
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%
+}
+.img-thumbnail {
+	margin: 10px 0px;
+}
+.affix {
+	top: 40px;
+	z-index: 9999 !important;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+    background: #333;
+}
+.navbar-inverse {
+    background-color: #fff !important;
+    border-color: #797979 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff !important;
+    background-color: #545454 !important;
+}
+
+.container .row {
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+ p {
+ 	margin: 10px 10px;
+ }
+@media screen and (max-width: 426px) {
+	.foot1 {
+		display: block !important;		
+	}
+	.foot2 {
+		display: none !important;
+	}
+	.banner_1 {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+	.foot1 {
+		display: none !important;
+	}
+	.foot2 {
+		display: block !important;
+	}
+	.foot_new1 {
+		display: none !important;
+	}
+	.banner_1 {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 1025px) {
+	.foot1 {
+		display: none !important;
+	}
+	.foot2 {
+		display: block !important;
+	}
+}

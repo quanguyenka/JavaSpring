@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quan ly</title>	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script type="text/javascript" src="QuanLy.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body ng-app="myApp" ng-controller="myController">
+	<div class="container img-thumbnail center-block" id="table1">
+		<h1 style="text-align: center;">Quản lý xe</h1>
+		<table class="form-group table-condensed table">
+		<thead>
+			<tr>
+				<th>STT</th>
+				<th>Chọn</th>
+				<th>Mã xe</th>
+				<th>Hãng xe</th>
+				<th>Loại xe</th>
+				<th>Giá xe</th>
+				<th>Năm sx</th>
+				<th>Gói BH</th>
+				<th>Số lượng</th>
+				<th>Thao tác</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="oto in otos">
+				<td>{{$index}}</td>
+				<td><input type="checkbox" name="" value=""></td>
+				<td>{{oto.maxe}}</td>
+				<td>{{oto.hangxe}}</td>
+				<td>{{oto.loaixe}}</td>
+				<td>{{oto.giaxe}}</td>
+				<td>{{oto.namSX}}</td>
+				<td>{{oto.goiBH}}</td>
+				<td>{{oto.soluong}}</td>
+				<td>
+					<input type="button" name="" value="Sửa" class="btn btn-info">
+					<button type="button" name="" ng-click="removeRow(oto.maxe)" value="" class="btn btn-danger">Xóa</button>
+				</td>
+			</tr>
+			<tr>
+				<td><button type="submit" class="btn btn-success" id="addnew">Thêm</button></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="container img-thumbnail center-block" id="table2">
+		<h1 style="text-align: center;">Add new car</h1>
+		<table class="table table-condensed">
+			<tbody>
+				<tr>
+					<td>Mã xe</td>
+					<td><input type="text" name="maxe" required ng-model="maxe" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Hãng xe</td>
+					<td><input type="text" name="hangxe" required ng-model="hangxe" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Loại xe</td>
+					<td><input type="text" name="loaixe" required ng-model="loaixe" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Giá xe</td>
+					<td><input type="number" name="giaxe" required ng-model="giaxe" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Năm sx</td>
+					<td><input type="number" name="namsx" required ng-model="namsx" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Gói BH</td>
+					<td><input type="text" name="goibh" required ng-model="goibh" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Số lượng</td>
+					<td><input type="number" name="soluong" required ng-model="soluong" class="form-control"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" ng-click="addRow()" name="" id="Them" value="Thêm" class="btn btn-success">
+					</td>
+					<td>
+						<input type="button" name="" value="Hủy" id="Huy" class="btn btn-danger">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container img-thumbnail center-block" id="table2">
+		
+	</div>
+</body>
+<script type="text/javascript" src="Pu.js"></script>
+</html>

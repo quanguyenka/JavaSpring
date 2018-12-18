@@ -1,0 +1,22 @@
+.container  {
+	margin-top: 30px;
+}
+
+.status {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	margin: 3px;
+}
+#Content {
+	display: none;
+	background: lightblue;
+}
+#content {
+	height: 200px;
+}
+.noidung {
+	font-size: 30px;
+	display: none;
+}
